@@ -1,0 +1,14 @@
+
+version: '2'
+services:
+  awshealth-to-slack:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "9000:8080"
+    environment:
+      - SLACK_WEBHOOK_URL=
+      - LOCALE=en_US
+      - TZ=America/Chicago
+      - SEND_TO_SLACK=false

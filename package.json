@@ -1,0 +1,26 @@
+{
+  "name": "awshealth-to-slack",
+  "version": "0.0.1",
+  "description": "Publish AWS Health events to slack",
+  "main": "app.js",
+  "engines": {
+    "node": "14.15.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmoney/awshealth-to-slack.git"
+  },
+  "author": "jmoney",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jmoney/awshealth-to-slack/issues"
+  },
+  "homepage": "https://github.com/jmoney/awshealth-to-slack#readme",
+  "dependencies": {
+    "@slack/webhook": "^6.0.0",
+    "moment-timezone": "^0.5.33"
+  }
+}
