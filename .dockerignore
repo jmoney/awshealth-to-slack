@@ -1,1 +1,7 @@
 node_modules
+docs
+site
+samples
+.gitignore
+.nvmrc
+mkdocs.yml

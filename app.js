@@ -1,9 +1,8 @@
 const { IncomingWebhook } = require('@slack/webhook');
-const { time } = require('console');
 const moment = require('moment-timezone')
 
-const url = process.env.SLACK_WEBHOOK_URL;
-const webhook = new IncomingWebhook(url);
+const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
+const webhook = new IncomingWebhook(slackWebhookUrl);
 
 const language = process.env.LOCALE
 const timezone = process.env.TZ
@@ -15,7 +14,7 @@ exports.handler =  async function(event, context) {
     console.log(JSON.stringify(event, null, 4))
     const message = mapToSlack(event)
     console.log(message)
-    if (sendToSlack === 'true') {
+    if (slackWebhookUrl) {
         await webhook.send(
             message
         )

@@ -18,4 +18,4 @@ If you want to see how it integrates with slack create an [Incoming Webhook](htt
 
 ### Example Post
 
-![AWSHealth_Slack](docs/imgs/AwsHealth_Slack.png)
+![AWSHealth_Slack](./imgs/AwsHealth_Slack.png)
