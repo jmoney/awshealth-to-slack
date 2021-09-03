@@ -3,6 +3,7 @@ name: Create and publish a Docker image
 on:
   push:
     tags:
+      - v0.*
       - v1.*
 
 env:
