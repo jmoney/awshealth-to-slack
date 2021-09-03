@@ -7,9 +7,7 @@ const webhook = new IncomingWebhook(slackWebhookUrl);
 const language = process.env.LOCALE
 const timezone = process.env.TZ
 
-const sendToSlack = process.env.SEND_TO_SLACK
-
-exports.handler =  async function(event, context) {
+exports.handler = async function(event, context) {
 
     console.log(JSON.stringify(event, null, 4))
     const message = mapToSlack(event)
