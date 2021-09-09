@@ -5,3 +5,5 @@ samples
 .gitignore
 .nvmrc
 mkdocs.yml
+Dockerfile
+docker-compose.yml
