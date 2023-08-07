@@ -1,5 +1,0 @@
-  
-site_name: AWS Health To Slack
-theme: material
-nav:
-  - Home: index.md
